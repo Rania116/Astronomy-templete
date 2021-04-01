@@ -1,0 +1,10 @@
+body {
+    font-family: 'Cormorant Garamond', serif;
+    background-color: #052747;
+    color: cornsilk;
+}
+
+.main {
+    border-radius: 3ex;
+    box-shadow: 0 4px 8px 0 #32E3EF, 0 6px 20px 0 #32E3EF;
+}

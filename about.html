@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> About </title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&display=swap" rel="stylesheet">
+    <script src="jquery-3.5.1.js"></script>
+
+    <script>
+        $(function() {
+            //increase size
+            $(".inc").on('click', function() {
+                    var currentsize = $("p").css("font-size");
+                    var currentnum = parseFloat(currentsize);
+                    var newSize = currentnum * 1.1;
+                    $('p').css("font-size", newSize)
+                })
+                //decrsce size
+            $(".dec").on('click', function() {
+                    var currentsize = $("p").css("font-size");
+                    var currentnum = parseFloat(currentsize);
+                    var newSize = currentnum * 0.8;
+                    $('p').css("font-size", newSize)
+                })
+                //reset size
+            var currentsize = $("p").css("font-size");
+            $(".reset").on("click", function() {
+                $("p").css("font-size", currentsize)
+            })
+
+
+        })
+    </script>
+    <style>
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            background-image: url("images/background2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: cornsilk;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-sm navbar-light fixed-top bg-dark ">
+        <i class="fa fa-globe text-info fa-2x  ml-5" aria-hidden="true"></i> <a class="navbar-brand ml-1  text-light" href="#">Froncheer</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse  " id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-light ml-5">
+                <li class="nav-item active">
+                    <a class="nav-link text-light mr-5" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light mr-5" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light mr-5" href="contactUS.html">Contact US</a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- end navbar -->
+    <!-- start button -->
+    <div class="group text-center">
+        <button class="inc btn btn-success  m-5"><i class="fa fa-plus"></i></button>
+        <button class="dec btn btn-danger m-5"><i class="fa fa-minus"></i></button>
+        <button class="reset btn btn-info m-5"><i class="fa fa-refresh"></i></button>
+    </div>
+    <!-- end button  -->
+    <!-- start content -->
+    <div class="text-center p-4 m-5 h3">
+        <p> They key difference between a planet and a dwarf planet is the kinds of objects that share its orbit around the Sun. Pluto, for example, has not cleared its orbit of similar objects while Earth or Jupiter have no similarly-sized worlds on the
+            same path around the Sun. Like planets, dwarf planets are generally round (Haumea looks like an overinflatred football) and orbit the Sun.</p>
+        <p>There are likely thousands of dwarf planets waiting to be discovered beyond Neptune. The five best known dwarf planets are: Ceres, Pluto, Makemake, Haumea and Eris. Except for Ceres, which lies in the main asteroid belt, these small worlds are
+            located in the Kuiper Belt. They’re considered dwarfs because they are massive, round, and orbit the Sun, but haven't cleared their orbital path.
+        </p>
+
+    </div>
+    <!-- end content  -->
+    <!-- start footer -->
+    <footer class="text-center text-white" style="background-color: #15052c;">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-link btn-floating btn-lg text-primary m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fa fa-facebook-f"></i
+            ></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-link btn-floating btn-lg text-primary m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fa fa-twitter"></i
+            ></a>
+
+                <!-- Google -->
+                <a class="btn btn-link btn-floating btn-lg text-danger m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fa fa-google"></i
+            ></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-link btn-floating btn-lg text-danger m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fa fa-instagram"></i
+            ></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-link btn-floating btn-lg text-info m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fa fa-linkedin"></i
+            ></a>
+                <!-- Github -->
+                <a class="btn btn-link btn-floating btn-lg text-info m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fa fa-github"></i
+            ></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center text-dark p-3" style="background-color: #061927;">
+            © 2020 Copyright:
+            <a class="text-dark" href="https://www.linkedin.com/in/rania-badr-9562971b1">Tempete of plante</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- end footer -->
+
+
+    <!-- library of bootstrap -->
+    <script src="js/JQuery-3.3.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+</body>
+
+</html>
